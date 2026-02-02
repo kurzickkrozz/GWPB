@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  gw1-bot:
+    build: .
+    container_name: gw1_party_bot
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - ./bot_data:/app/data
