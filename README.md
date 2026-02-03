@@ -1,6 +1,7 @@
-# Guild Wars Party Bot
-
-A Discord bot for organizing Guild Wars Speed Clear parties.
+![image](https://github.com/user-attachments/assets/3ca98abf-a79f-4e7c-aca3-aab55c6468b6)
+<h2 align="center">
+  A Discord bot for forming and organizing Guild Wars Speed Clear parties.
+</h2>
 
 ## Setup
 
