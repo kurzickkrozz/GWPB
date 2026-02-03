@@ -1,43 +1,52 @@
 # Guild Wars Party Bot
-This is my newest project, the "Guild Wars Party Bot" (GWPB).
-The GWPB serves as a party formation tracking bot that is specifically tailored to Guild Wars.
-Future iterations of this bot may include other games if deemed necessary and if I have enough time.
-The GWPB does not, in any way, interact with your Guild Wars client (Gw.exe); it is only a Discord bot.
 
-## What is this?
-Using the main command ``/formparty``, the discord user will be prompted to ``"Select the run type..."``. As of the time of writing, the following party formations can be created:
- - BogSC
- - DeepSC
- - DoASC
- - FoWSC
- - SoOSC
- - UrgozSC
- - UWSC
+A Discord bot for organizing Guild Wars Speed Clear parties.
 
-After selecting one of the options, a party will be created and users can react to reserve their spot as one of the selected roles.
-Each role is predefined based on the current META for the respective Speed Clear area in-game. The META variations were selected based upon two factors:
-  1) What the FBGM Wiki shows is META
-  2) What's most commonly used in-game by players
+## Setup
 
-Example: UrgozSC tactics that the bot uses are for Spikeway, not Skipway. Skipway may be faster, but more players in-game use Spikeway.
+### 1. Install Node.js
+Make sure you have Node.js installed (v18 or higher recommended).
 
-## Order of Operations
-1) User executes ``/formparty`` in Discord server
-2) User selects Speed Clear type from GWPB-prompted embed
-3) GWPB performs a series of actions
-   - Gets current date/time and labels the party with an ID for logging purposes
-   - Creates party embed and lists the party as "Active" and starts a hidden timer
-     - Timer is set for 3 hours. After 3 hours, the party embed auto locks but does not delete (for logging)
-   - Sets command executing user to "Party Leader"
-   - Creates ``Leave`` button and ``Claim Role`` button for users to Join/Leave the party
-5) d
-6) d
-7) 
+### 2. Install Dependencies
+```bash
+npm install
+```
 
-## Flowchart
-**COMING SOON**
+### 3. Create Discord Bot
+1. Go to https://discord.com/developers/applications
+2. Click "New Application" and give it a name
+3. Go to the "Bot" section and click "Add Bot"
+4. Copy the bot token
 
-For now, just review the Order of Operations
+### 4. Configure Environment
+1. Copy `.env.example` to `.env`
+2. Paste your bot token as `DISCORD_TOKEN`
+3. Set `TARGET_CHANNEL_ID` to the channel where party posts should appear
+   - Enable Developer Mode in Discord (Settings > App Settings > Advanced)
+   - Right-click the channel and "Copy Channel ID"
 
-## Update Roadmap
-This section is where I'll be putting all of my future plans for the bot. This includes things that the community suggests to me.
+### 5. Invite Bot to Server
+1. Go to OAuth2 > URL Generator in the Discord Developer Portal
+2. Select scopes: `bot`, `applications.commands`
+3. Select permissions: `Send Messages`, `Embed Links`, `Read Message History`
+4. Copy the generated URL and open it to invite the bot
+
+### 6. Run the Bot
+```bash
+npm start
+```
+
+## Commands
+
+- `/formparty` - Start a new party formation
+- `/listparties` - Show all active parties
+- `/help` - Show help information
+
+## Features
+
+- Create parties for various Guild Wars speed clears (UWSC, FoWSC, DoASC, etc.)
+- Claim, switch, and leave roles
+- Add external (non-Discord) players by IGN
+- Party leader controls: kick, promote, ping, disband
+- Parties auto-lock after 3 hours
+- Persistent party data (survives bot restarts)
