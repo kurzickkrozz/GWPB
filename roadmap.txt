@@ -1,24 +1,36 @@
 #######################################
-			--- v2.0 ---
+			--- v1.1.0 ---
 #######################################
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Party claim and empty party bug.
 When party leader leaves, create "Claim Party" button for any remaining user in the party
 	-> If party has 0 members (last person leaves, automatically disband party).
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// Adding logging or analytics
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// Change claimed role to PREFERRED role
-Add "Flex Role" option -- User claims role as normal, but can opt for role suffix after their Username.
-	-> If player wants to play Bonder, but can also Tank, Seed, VoS (but not Spike) -- "@PlayerName | {A}{Mo}{D} |"
-OR
-// Change role selection to inverse logic.
-Instead of users claiming specific roles, they can just fill out what their PREFERRED role is, as well as additional roles they can fill.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// Make the embed prettier
-It feels a little boring
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Add party experience level
 Party leader chooses (and can change) the level of expertise that the party is intended for.
 	-> Teaching | Practice | Standard
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#######################################
+			--- v1.2.0 ---
+#######################################
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Adding logging ond/or analytics
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Make the embed prettier
+It feels a little boring
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#######################################
+			--- v1.3.0 ---
+#######################################
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Change claimed role to PREFERRED role
+Add "Flex Role" option -- User claims role as normal, but can opt for role suffix after their Username.
+	-> If player wants to play Bonder, but can also Tank, Seed, VoS (but not Spike) -- "@PlayerName | {A}{Mo}{D} |"
+
+OR (still deciding)
+
+// Change role selection to inverse logic.
+Instead of users claiming specific roles, they can just fill out what their PREFERRED role is, as well as additional roles they can fill.
+	-> This way when a party is forming, they can see what roles they can't play already, so a group of exp players can just flex around.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
